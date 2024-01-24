@@ -8,6 +8,10 @@ body {
 	min-height: 100vh;
 
 	background-color: #fefdff;
+
+	--header-height: 100px;
+	--footer-height: 332px;
+
 }
 
 .container {
@@ -20,7 +24,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-	height: 100px;
+	height: var(--header-height);
 }
 
 .logo {
@@ -94,6 +98,7 @@ body {
 
 .content {
 	margin: 88px 0 0 120px;
+	min-height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 
 .hero-image {
@@ -154,4 +159,88 @@ body {
 	color: #FEFDFF;
 
 	cursor: pointer;
+}
+
+.footer {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: var(--footer-height);
+
+  line-height: 1;
+
+	background-color: #FEFDFF;
+}
+
+.footer-nav {
+  display: inline;
+
+  margin-left: 120px;
+
+  font-size: 20px;
+  font-style: normal;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.footer-logo {
+  position: relative;
+  display: inline;
+
+  margin-right: 182px;
+}
+
+.terms {
+  position: absolute;
+  left: -100px;
+  top: 86px;
+
+  width: 384px;
+
+  text-align: center;
+
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  color: #94A3B8;
+}
+
+.terms-link {
+	text-decoration: none;
+
+	color: #94A3B8;
+}
+
+.contacts {
+	position: relative;
+
+  margin-right: 104px;
+}
+
+.social-network {
+  margin: 0 16px;
+
+  text-decoration: none;
+}
+
+.email {
+  position: absolute;
+  top: 50px; 
+  right: 0px;
+
+  margin-right: 16px;
+
+  text-align: right;
+
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #15343A;
+  text-decoration: none;
 }
