@@ -2,6 +2,9 @@ body {
 	display: flex;
 	justify-content: center;
 
+	font-family: 'Nunito', sans-serif;
+	line-height: 150%;
+
 	margin: 0;
 	padding: 0;
 
@@ -34,10 +37,6 @@ body {
 
 .nav {
 	font-size: 20px;
-	font-style: normal;
-	font-family: 'Nunito', sans-serif;
-	font-weight: 600;
-	line-height: 150%;
 }
 
 .nav-link {
@@ -56,11 +55,8 @@ body {
 	text-align: center;
 	margin: 38px 16px;
 
-	font-family: 'Nunito', sans-serif;
 	font-size: 16px;
-	font-style: normal;
 	font-weight: 400;
-	line-height: 24px;
 	text-decoration-line: underline;
 	color: #15343A;
 }
@@ -77,9 +73,7 @@ body {
 	margin: 18px 0 18px 0;
 	padding: 16px;
 
-	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
-	font-style: normal;
 	font-weight: 700;
 	line-height: 24px;
 	text-transform: uppercase;
@@ -97,11 +91,12 @@ body {
 }
 
 .content {
-	margin: 88px 0 0 120px;
 	min-height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 
 .hero-image {
+	position: relative;
+
 	height: 760px;
 
   background-image: url("./images/hero-image.png");
@@ -109,13 +104,20 @@ body {
   background-repeat: no-repeat;
 }
 
+.vector {
+	position: absolute;
+	top: 285px;
+	right: 490px;
+}
+
 .hero-text {
+	margin-left: 120px;
+	margin-top: 88px;
+	
 	width: 879px;
 	height: 174px;
 
-	font-family: 'Nunito', sans-serif;	
 	font-size: 64px;
-	font-style: normal;
 	font-weight: 800;
 	line-height: normal;
 }
@@ -124,32 +126,28 @@ body {
 	width: 331px;
 	height: 90px;
 
+	margin-left: 120px;
 	margin-top: 32px;
 
 	color: #15343A;
 
-	font-family: 'Nunito', sans-serif;	
 	font-size: 20px;
-	font-style: normal;
 	font-weight: 400;
-	line-height: 150%;
 }
 
 .hero-btn {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 	width: 282px;
 	height: 56px;
-	margin-top: 40px;
+	margin: 40px 0 0 120px;
 	gap: 8px;
 
-	font-family: 'Nunito', sans-serif;	
 	font-size: 20px;
-	font-style: normal;
 	font-weight: 700;
-	line-height: 24px; 
 	text-transform: uppercase;
 
 	border: none;
@@ -159,6 +157,140 @@ body {
 	color: #FEFDFF;
 
 	cursor: pointer;
+}
+
+.splash {
+	position: absolute;
+	top: -28px;
+	left: -32px;
+}
+
+.how-hearify-works-page {
+	margin-top: 176px;
+}
+
+.how-hearify-works-vector {
+	position: relative;
+
+	height: 70px;
+
+	background-image: url(./images/how-hearify-works.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.how-hearify-works-text {
+	font-size: 40px;
+	font-weight: 700;
+
+	color: #15343A;
+	text-align: center;
+	align-items: center;
+	line-height: 1.5;
+}
+
+.how-hearify-works-background {
+	background-image: url(./images/bg.svg);
+	background-position: center;
+}
+
+.how-hearify-works-cards {
+	border-radius: 20px;
+
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.13) 68.53%);
+	backdrop-filter: blur(22.885459899902344px);
+}
+
+.how-hearify-works-cards-top {
+	display: flex;
+
+	padding-top: 64px;
+	margin: 0 222px 24px 222px;
+
+	height: 473px;
+}
+
+.how-hearify-works-card-top-left {
+	height: 100%;
+	width: 486px;
+
+	margin-right: 24px;
+}
+
+.how-hearify-works-card-top-right {
+	height: 100%;
+	width: 486px;
+}
+
+.how-hearify-works-cards-bottom {
+	display: flex;
+
+	margin: 0 120px;
+	padding-bottom: 134px;
+
+	height: 446px;
+}
+
+.how-hearify-works-card-bottom-left {
+	height: 100%;
+	width: 468px;
+}
+
+
+.how-hearify-works-card-bottom-center {
+	height: 100%;
+	width: 338px;
+
+	margin: 0 24px;
+
+}
+
+.how-hearify-works-card-bottom-right {
+	height: 100%;
+	width: 346px;
+}
+
+.card-header {
+	margin: 32px 0 24px 32px;
+
+	font-size: 28px;
+	font-weight: 700;
+	color: #4E30D2;
+}
+
+.card-text {
+	margin: 0 0 24px 32px;
+
+	font-size: 16px;
+	color: #15343A;
+	}
+
+.card-1-text {
+	margin-right: 140px;
+}
+
+.card-2-text {
+	margin-right: 150px;
+}
+
+.card-3-text {
+	margin-right: 120px;
+}
+
+.card-image {
+	position: relative;
+	
+	margin-left: 32px;
+}
+
+.card-image-apload-you-tube-file {
+	position: absolute;
+	top: 132px;
+	right: 0;
+}
+
+.card-image-generate {
+	margin-top: -12px;
 }
 
 .footer {
@@ -179,10 +311,6 @@ body {
   margin-left: 120px;
 
   font-size: 20px;
-  font-style: normal;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 600;
-  line-height: 150%;
 }
 
 .footer-logo {
@@ -201,11 +329,7 @@ body {
 
   text-align: center;
 
-  font-family: 'Nunito', sans-serif;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
   color: #94A3B8;
 }
 
@@ -236,11 +360,8 @@ body {
 
   text-align: right;
 
-  font-family: Nunito;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 150%;
   color: #15343A;
   text-decoration: none;
 }
